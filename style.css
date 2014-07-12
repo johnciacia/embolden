@@ -19,3 +19,13 @@ section {
 	margin: 40px auto;
 
 }
+
+time {
+	display: block;
+	padding-left: 20px;
+	float: left;
+}
+
+p {
+	margin-left: 150px;
+}
