@@ -1,0 +1,86 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 8, ../sass/screen.scss */
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+/* line 12, ../sass/screen.scss */
+h1 {
+  position: relative;
+  top: -2rem;
+  left: -7px;
+}
+
+/* line 18, ../sass/screen.scss */
+h1:before {
+  content: "+";
+  margin-right: 5px;
+}
+
+/* line 23, ../sass/screen.scss */
+section {
+  border-left: 1px solid #ccc;
+  width: 70%;
+  margin: 40px auto;
+}
+
+/* line 30, ../sass/screen.scss */
+div {
+  margin-top: -2.5rem;
+  margin-bottom: 3rem;
+}
+
+/* line 35, ../sass/screen.scss */
+time {
+  display: block;
+  padding-left: 1.5rem;
+  float: left;
+}
+
+/* line 41, ../sass/screen.scss */
+time ~ * {
+  margin-left: 9.5rem;
+}
+
+/* line 46, ../sass/screen.scss */
+ul.rating {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+/* line 54, ../sass/screen.scss */
+ul.rating li {
+  padding: 5px;
+  background-color: #000;
+  color: transparent;
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  height: 1em;
+  width: 1em;
+  line-height: 1em;
+  margin: 0.25em;
+  text-align: center;
+  border-radius: 1em;
+}
+
+/* line 69, ../sass/screen.scss */
+ul.rating {
+  clear: both;
+}
+
+/* line 76, ../sass/screen.scss */
+#hobbies ul {
+  display: table;
+  table-layout: fixed;
+}
+
+/* line 81, ../sass/screen.scss */
+#hobbies li {
+  display: table-cell;
+  text-align: center;
+}
