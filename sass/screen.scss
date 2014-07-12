@@ -3,74 +3,174 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+@import "compass/reset";
+@import "colors";
+@import "tags";
+
 
 
 body {
-	font-family: Helvetica, sans-serif;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	color: $primary-color;
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 30px;
+	line-height: 1.5em;
 }
 
 h1 {
-	position: relative;
-	top: -2rem;
-	left: -7px;
+	font-size: 1.5em;
+	line-height: 2.0rem;
+	padding-bottom: 1rem;
 }
 
-h1:before {
-	content: "+";
-	margin-right: 5px;
+h2 {
+	font-size: 1.0rem;
+	font-size: 1.5rem;
+	padding-bottom: 0.5rem;
 }
 
-section {
-	border-left: 1px solid #ccc;
-	width: 70%;
-	margin: 40px auto;
-
-}
-
-div {
-	margin-top: -2.5rem;
-	margin-bottom: 3rem;
+h3 {
+	font-size: 1em;
+	padding-bottom: 0.5rem;
 }
 
 time {
-	display: block;
-	padding-left: 1.5rem;
-	float: left;
+	font-size: 1rem;
+	color: #999;
 }
 
-time ~ * {
-	margin-left: 9.5rem;
+li {
+	padding-bottom: 0.5rem;
+	list-style: disc;
+	margin-left: 1rem;
+}
+
+header {
+	div {
+		width: 70%;
+		float: left;
+
+		h1 {
+			font-size: 3em;
+			text-transform: uppercase;
+		}
+
+		h2 {
+			font-size: 2em;
+			text-transform: uppercase;
+			color: $secondary-color;
+		}
+	}
+
+	ul {
+		float: right;
+	}
+
+	li {
+		list-style: none;
+		padding: 0px;
+		i {
+			color: $secondary-color;
+			padding-right: 0.5rem;
+		}
+	}
+}
+
+main {
+
+	h1 {
+		position: relative;
+		top: -2rem;
+		left: -2rem;
+		color: $secondary-color;
+	}
+
+	h2 {
+		font-size: 1.2em;
+		font-weight: 600;
+		padding-bottom: 0px;
+	}
+
+	h3 {
+		font-weight: 600;
+	}
+
+	h1:before {
+		content: "+";
+		margin-right: 0.5rem;
+	}
+
+	section {
+		border-left: 1px solid #ccc;
+		margin: 40px auto;
+		padding-left: 1.5rem;
+
+	}
+
+	div {
+		margin-top: -1rem;
+		margin-bottom: 3rem;
+	}
+
+	time {
+		display: block;
+		float: left;
+	}
+
+	time ~ * {
+		margin-left: 9.5rem;
+	}
+
+
+	ul.rating {
+		padding: 0px;
+		margin: 0px;
+		list-style: none;
+		clear: both;
+
+		li {
+			padding: 5px;
+			background-color: $secondary-color;
+			color: transparent;
+			margin: 0px;
+			padding: 0px;
+			float: left;
+			height: 1em;
+			width: 1em;
+			line-height: 1em;
+			margin: 0.25em;
+			text-align: center;
+			border-radius: 1em;
+
+
+		}
+
+		.no {
+				background-color: #ccc;
+		}
+
+		~ * {
+			margin-left: 7.5rem;
+		}
+	}
+
+
 }
 
 
-ul.rating {
-	padding: 0px;
-	margin: 0px;
-	list-style: none;
-}
-
-
-
-ul.rating li {
-	padding: 5px;
-	background-color: #000;
-	color: transparent;
-	margin: 0px;
-	padding: 0px;
-	float: left;
-	height: 1em;
-	width: 1em;
-	line-height: 1em;
-	margin: 0.25em;
-	text-align: center;
-	border-radius: 1em;
-}
-
-ul.rating {
-
+.clearfix {
 	clear: both;
 }
 
+
+
+#skills {
+	div {
+		margin-bottom: 0px;
+	}
+}
 
 
 #hobbies ul {
@@ -81,4 +181,8 @@ ul.rating {
 #hobbies li {
 	display: table-cell;
 	text-align: center;
+}
+
+#hobbies li {
+	padding: 5px;
 }
